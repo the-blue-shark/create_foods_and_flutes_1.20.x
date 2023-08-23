@@ -9,6 +9,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.the_blue_shark.foods_and_flutes.FoodsAndFlutes;
+import net.the_blue_shark.foods_and_flutes.block.ModBlocks;
 
 public class ModCreativeModTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -21,6 +22,8 @@ public class ModCreativeModTabs {
 
                         pOutput.accept(ModItems.CORN.get());
                         pOutput.accept(ModItems.POP_CORN.get());
+
+                        pOutput.accept(ModBlocks.CORN_CRATE.get());
 
 
                     })

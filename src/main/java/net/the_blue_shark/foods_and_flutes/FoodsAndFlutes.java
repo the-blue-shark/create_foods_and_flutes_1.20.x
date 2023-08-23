@@ -12,6 +12,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.the_blue_shark.foods_and_flutes.block.ModBlocks;
 import net.the_blue_shark.foods_and_flutes.item.ModCreativeModTabs;
 import net.the_blue_shark.foods_and_flutes.item.ModItems;
 import org.slf4j.Logger;
@@ -32,6 +33,7 @@ public class FoodsAndFlutes
         ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
