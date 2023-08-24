@@ -5,10 +5,10 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 
 public class ModFoods {
-    public static final FoodProperties CORN = new FoodProperties.Builder().nutrition(3)
+    public static final FoodProperties CORN = new FoodProperties.Builder().nutrition(1)
+            .saturationMod(0.3f).build();
+    public static final FoodProperties POP_CORN = new FoodProperties.Builder().nutrition(5)
             .saturationMod(0.6f).build();
-    public static final FoodProperties POP_CORN = new FoodProperties.Builder().nutrition(6)
-            .saturationMod(1.0f).build();
 
 
 }

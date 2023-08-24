@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "foods_and_flutes:block/corn_plant/corn_stage4"
+  }
+}

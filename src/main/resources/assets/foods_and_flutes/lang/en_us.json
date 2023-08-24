@@ -1,7 +1,11 @@
 {
   "item.foods_and_flutes.corn": "Corn",
+  "item.foods_and_flutes.corn_seeds": "Corn Seeds",
   "item.foods_and_flutes.pop_corn": "Popcorn",
+
   "block.foods_and_flutes.corn_crate": "Corn Crate",
+  "block.foods_and_flutes.corn_plant": "Corn Plant",
+
   "creativetab.foods_and_flutes_tab": "Foods 'n Flutes"
 }
 

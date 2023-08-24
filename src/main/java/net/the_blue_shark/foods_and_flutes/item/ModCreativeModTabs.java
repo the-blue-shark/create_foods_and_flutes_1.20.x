@@ -22,6 +22,7 @@ public class ModCreativeModTabs {
 
                         pOutput.accept(ModItems.CORN.get());
                         pOutput.accept(ModItems.POP_CORN.get());
+                        pOutput.accept(ModItems.CORN_SEEDS.get());
 
                         pOutput.accept(ModBlocks.CORN_CRATE.get());
 

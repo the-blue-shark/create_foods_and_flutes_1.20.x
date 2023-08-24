@@ -11,6 +11,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.the_blue_shark.foods_and_flutes.FoodsAndFlutes;
+import net.the_blue_shark.foods_and_flutes.block.custom.CornCropBlock;
 import net.the_blue_shark.foods_and_flutes.item.ModItems;
 
 import java.util.function.Supplier;
@@ -21,6 +22,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> CORN_CRATE = registerBlock("corn_crate",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DRIED_KELP_BLOCK)));
+
+    public static final RegistryObject<Block> CORN_PLANT = registerBlock("corn_plant",
+            () -> new CornCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
