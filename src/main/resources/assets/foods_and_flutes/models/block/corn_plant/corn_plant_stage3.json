@@ -1,6 +1,6 @@
 {
-  "parent": "block/cross",
+  "parent": "foods_and_flutes:block/large_crop_template",
   "textures": {
-    "cross": "foods_and_flutes:block/corn_plant/corn_stage3"
+    "bigcrop": "foods_and_flutes:block/corn_plant/corn_stage3"
   }
 }

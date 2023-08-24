@@ -15,7 +15,7 @@
                   "condition": "minecraft:block_state_property",
                   "block": "foods_and_flutes:corn_plant",
                   "properties": {
-                    "age": "6"
+                    "age": "7"
                   }
                 }
               ],
