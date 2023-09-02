@@ -23,6 +23,13 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.CORN.get());
                         pOutput.accept(ModItems.POP_CORN.get());
                         pOutput.accept(ModItems.CORN_SEEDS.get());
+                        pOutput.accept(ModItems.BANANA.get());
+                        pOutput.accept(ModItems.PEAR.get());
+                        pOutput.accept(ModItems.BEER.get());
+                        pOutput.accept(ModItems.HORSE_MEAT.get());
+                        pOutput.accept(ModItems.PEPPER.get());
+                        pOutput.accept(ModItems.PEPPER_SEEDS.get());
+
 
                         pOutput.accept(ModBlocks.CORN_CRATE.get());
                         pOutput.accept(ModBlocks.BANANA_CRATE.get());
