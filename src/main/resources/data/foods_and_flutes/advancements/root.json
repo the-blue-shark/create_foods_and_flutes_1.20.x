@@ -1,0 +1,40 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Hot Hot Hot",
+            "color": "red"
+        },
+        "description": {
+            "text": "Eat a hot pepper.",
+            "color": "gold"
+        },
+        "icon": {
+            "item": "foods_and_flutes:pepper"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "background": "minecraft:textures/foods_and_flutes/block/corn_crate.png"
+    },
+    "criteria": {
+        "Trigger": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "count": {
+                        "min": 1,
+                        "max": 1
+                    },
+                    "item": "foods_and_flutes:pepper"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "Eat a hot pepper"
+        ]
+    ]
+}

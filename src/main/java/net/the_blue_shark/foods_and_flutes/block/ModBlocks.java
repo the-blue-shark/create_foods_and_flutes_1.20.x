@@ -17,15 +17,27 @@ import net.the_blue_shark.foods_and_flutes.item.ModItems;
 import java.util.function.Supplier;
 
 public class ModBlocks {
+
+    //Code
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, FoodsAndFlutes.MOD_ID);
 
-    public static final RegistryObject<Block> CORN_CRATE = registerBlock("corn_crate",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DRIED_KELP_BLOCK)));
 
-    public static final RegistryObject<Block> CORN_PLANT = registerBlock("corn_plant",
+
+
+     //Crops
+            public static final RegistryObject<Block> CORN_PLANT = registerBlock("corn_plant",
+            () -> new CornCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
+            public static final RegistryObject<Block> PEPPER_PLANT = registerBlock("pepper_plant",
             () -> new CornCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
 
+    //Sacks And Crates
+    public static final RegistryObject<Block> CORN_CRATE = registerBlock("corn_crate",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DRIED_KELP_BLOCK)));
+    public static final RegistryObject<Block> BANANA_CRATE = registerBlock("banana_crate.json",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DRIED_KELP_BLOCK)));
+
+    //Code
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
