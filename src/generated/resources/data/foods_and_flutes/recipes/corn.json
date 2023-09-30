@@ -1,12 +1,13 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "category": "misc",
   "ingredients": [
     {
       "item": "foods_and_flutes:corn_crate"
     }
   ],
   "result": {
-    "item": "foods_and_flutes:corn",
-    "count": 9
+    "count": 9,
+    "item": "foods_and_flutes:corn"
   }
 }

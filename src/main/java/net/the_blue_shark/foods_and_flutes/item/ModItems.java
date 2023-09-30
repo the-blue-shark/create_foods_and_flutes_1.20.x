@@ -34,10 +34,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(Foods.PORKCHOP)));
 
     //Seeds
-    public static final RegistryObject<Item> CORN_SEEDS = ITEMS.register("corn_seeds",
-            () -> new ItemNameBlockItem(ModBlocks.CORN_PLANT.get(), new Item.Properties()));
-    public static final RegistryObject<Item> PEPPER_SEEDS = ITEMS.register("pepper_seeds",
-            () -> new ItemNameBlockItem(ModBlocks.PEPPER_PLANT.get(), new Item.Properties()));
+
 
     //Other Items
     public static final RegistryObject<Item> FLUTE = ITEMS.register("flute",

@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "foods_and_flutes:item/corn"
+    "layer0": "foods_and_flutes:item/horse_meat"
   }
 
 }
