@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "B "
+  ],
+  "key": {
+    "#": {
+      "item": "foods_and_roots:corn"
+    },
+    "B": {
+      "item": "minecraft:bowl"
+    }
+  },
+  "result": {
+    "item": "foods_and_roots:corn_bowl",
+    "count": 1
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "item.foods_and_roots.corn": "Corn",
+  "item.foods_and_roots.corn_seeds": "Corn Seeds",
+  "item.foods_and_roots.corn_bowl": "Corn Bowl",
+  "item.foods_and_roots.pop_corn": "Popcorn Bowl",
+  "item.foods_and_roots.banana": "Banana",
+  "item.foods_and_roots.pear": "Pear",
+  "item.foods_and_roots.pepper": "Pepper",
+  "item.foods_and_roots.pepper_seeds": "Pepper Seeds",
+  "item.foods_and_roots.beer": "Beer",
+  "item.foods_and_roots.horse_meat": "Raw Horse Meat",
+  "item.foods_and_roots.cooked_horse_meat": "Cooked Horse Meat",
+
+
+  "block.foods_and_roots.corn_crate": "Corn Crate",
+  "block.foods_and_roots.corn_crop": "Corn Plant",
+  "block.foods_and_roots.pepper_crop": "Pepper Crop",
+  "block.foods_and_roots.potted_buddleja": "Potted Buddleja",
+  "block.foods_and_roots.buddleja": "Buddleja",
+
+  "effect.foods_and_roots.dehydration_effect": "Dehydration",
+
+  "creativetab.foods_and_roots_tab": "Foods 'n Flutes"
+}
+
