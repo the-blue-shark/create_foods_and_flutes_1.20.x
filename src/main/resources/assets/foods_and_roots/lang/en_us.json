@@ -10,11 +10,13 @@
   "item.foods_and_roots.beer": "Beer",
   "item.foods_and_roots.horse_meat": "Raw Horse Meat",
   "item.foods_and_roots.cooked_horse_meat": "Cooked Horse Meat",
+  "item.foods_and_roots.blue_berries": "Blue Berries",
 
 
   "block.foods_and_roots.corn_crate": "Corn Crate",
   "block.foods_and_roots.corn_crop": "Corn Plant",
   "block.foods_and_roots.pepper_crop": "Pepper Crop",
+  "block.foods_and_roots.blue_berry_bush": "Blue Berry Bush",
   "block.foods_and_roots.potted_buddleja": "Potted Buddleja",
   "block.foods_and_roots.buddleja": "Buddleja",
 

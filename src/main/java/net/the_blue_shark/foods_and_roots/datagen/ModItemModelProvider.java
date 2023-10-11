@@ -30,6 +30,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.CORN);
         simpleItem(ModItems.CORN_BOWL);
         simpleItem(ModItems.HORSE_MEAT);
+        simpleItem(ModItems.BLUE_BERRIES);
 
         simpleItem(ModItems.PEPPER_SEEDS);
         simpleItem(ModItems.CORN_SEEDS);

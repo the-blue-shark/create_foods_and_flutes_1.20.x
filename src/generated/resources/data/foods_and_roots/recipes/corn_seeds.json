@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "foods_and_roots:corn"
+    }
+  ],
+  "result": {
+    "item": "foods_and_roots:corn_seeds"
+  }
+}

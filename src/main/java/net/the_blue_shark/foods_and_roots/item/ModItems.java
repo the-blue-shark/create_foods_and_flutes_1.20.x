@@ -16,6 +16,8 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, FoodsAndRoots.MOD_ID);
     //Food
+    public static final RegistryObject<Item> BLUE_BERRIES = ITEMS.register("blue_berries",
+            () -> new Item(new Item.Properties().food(Foods.SWEET_BERRIES)));
     public static final RegistryObject<Item> CORN = ITEMS.register("corn",
             () -> new Item(new Item.Properties().food(ModFoods.CORN)));
     public static final RegistryObject<Item> BANANA = ITEMS.register("banana",

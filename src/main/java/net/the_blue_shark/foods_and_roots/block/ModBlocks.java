@@ -10,6 +10,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.the_blue_shark.foods_and_roots.FoodsAndRoots;
+import net.the_blue_shark.foods_and_roots.block.custom.BlueBerryBush;
 import net.the_blue_shark.foods_and_roots.block.custom.CornCropBlock;
 import net.the_blue_shark.foods_and_roots.block.custom.PepperCropBlock;
 import net.the_blue_shark.foods_and_roots.item.ModItems;
@@ -23,8 +24,9 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, FoodsAndRoots.MOD_ID);
 
 
-
-
+     //Bushes
+     public static final RegistryObject<Block> BLUE_BERRY_BUSH = BLOCKS.register("blue_berry_bush",
+             () -> new BlueBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).noOcclusion().noCollission()));
      //Crops
      public static final RegistryObject<Block> PEPPER_CROP = BLOCKS.register("pepper_crop",
              () -> new PepperCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));

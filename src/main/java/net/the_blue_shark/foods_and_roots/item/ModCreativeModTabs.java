@@ -27,6 +27,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.BEER.get());
                         pOutput.accept(ModItems.HORSE_MEAT.get());
                         pOutput.accept(ModItems.PEPPER.get());
+                        pOutput.accept(ModItems.BLUE_BERRIES.get());
 
                         pOutput.accept(ModItems.PEPPER_SEEDS.get());
                         pOutput.accept(ModItems.CORN_SEEDS.get());
