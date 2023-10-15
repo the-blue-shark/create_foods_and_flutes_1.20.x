@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "foods_and_roots:block/blue_berry_bush0"
+    },
+    "age=1": {
+      "model": "foods_and_roots:block/blue_berry_bush1"
+    },
+    "age=2": {
+      "model": "foods_and_roots:block/blue_berry_bush2"
+    },
+    "age=3": {
+      "model": "foods_and_roots:block/blue_berry_bush3"
+    }
+  }
+}

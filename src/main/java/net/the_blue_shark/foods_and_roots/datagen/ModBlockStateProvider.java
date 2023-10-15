@@ -11,10 +11,13 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 import net.the_blue_shark.foods_and_roots.FoodsAndRoots;
 import net.the_blue_shark.foods_and_roots.block.ModBlocks;
+import net.the_blue_shark.foods_and_roots.block.custom.BlueBerryBush;
 import net.the_blue_shark.foods_and_roots.block.custom.CornCropBlock;
 import net.the_blue_shark.foods_and_roots.block.custom.PepperCropBlock;
 
 import java.util.function.Function;
+
+import static net.minecraft.world.level.block.SweetBerryBushBlock.AGE;
 
 public class ModBlockStateProvider extends BlockStateProvider {
     public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
@@ -23,7 +26,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-
+        makeBlueBerryBush((BushBlock) ModBlocks.BLUE_BERRY_BUSH.get(), "blue_berry_bush", "blue_berry_bush");
         makePepperCrop((CropBlock) ModBlocks.PEPPER_CROP.get(), "pepper_crop_stage", "pepper_crop_stage");
         makeCornCrop(((CropBlock) ModBlocks.CORN_CROP.get()), "corn_crop_stage", "corn_crop_stage");
 
@@ -31,6 +34,18 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 blockTexture(ModBlocks.BUDDLEJA.get())).renderType("cutout"));
         simpleBlockWithItem(ModBlocks.POTTED_BUDDLEJA.get(), models().singleTexture("potted_buddleja", new ResourceLocation("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.BUDDLEJA.get())).renderType("cutout"));
+    }
+    public void makeBlueBerryBush(BushBlock block, String modelName, String textureName) {
+        Function<BlockState, ConfiguredModel[]> function = state -> blueBerryBushStates(state, block, modelName, textureName);
+
+        getVariantBuilder(block).forAllStates(function);
+    }
+    private ConfiguredModel[] blueBerryBushStates(BlockState state, BushBlock block, String modelName, String textureName) {
+        ConfiguredModel[] models = new ConfiguredModel[1];
+        models[0] = new ConfiguredModel(models().cross(modelName + state.getValue(AGE),
+                new ResourceLocation(FoodsAndRoots.MOD_ID, "block/" + textureName + state.getValue(AGE))).renderType("cutout"));
+
+        return models;
     }
     public void makePepperCrop(CropBlock block, String modelName, String textureName) {
         Function<BlockState, ConfiguredModel[]> function = state -> PepperStates(state, block, modelName, textureName);

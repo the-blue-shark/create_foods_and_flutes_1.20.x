@@ -27,14 +27,18 @@ public class ModEvents {
         if(event.getType() == VillagerProfession.FARMER) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
 
-            // Level 1
+
             trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
                     new ItemStack(ModItems.CORN.get(), 21),
                     new ItemStack(Items.EMERALD, 1),
                     16, 8, 0.02f));
 
-            // Level 8
-            trades.get(8).add((pTrader, pRandom) -> new MerchantOffer(
+            trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(ModItems.BLUE_BERRIES.get(), 26),
+                    new ItemStack(Items.EMERALD, 1),
+                    16, 8, 0.02f));
+
+            trades.get(5).add((pTrader, pRandom) -> new MerchantOffer(
                     new ItemStack(Items.EMERALD, 2),
                     new ItemStack(ModItems.PEPPER.get(), 5),
                     14, 12, 0.075f));
@@ -54,6 +58,11 @@ public class ModEvents {
         genericTrades.add((pTrader, pRandom) -> new MerchantOffer(
                 new ItemStack(Items.EMERALD, 12),
                 new ItemStack(ModItems.PEPPER_SEEDS.get(), 3),
+                3, 2, 0.2f));
+
+        genericTrades.add((pTrader, pRandom) -> new MerchantOffer(
+                new ItemStack(Items.EMERALD, 3),
+                new ItemStack(ModItems.BLUE_BERRIES.get(), 1),
                 3, 2, 0.2f));
 
         rareTrades.add((pTrader, pRandom) -> new MerchantOffer(

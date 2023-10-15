@@ -16,18 +16,18 @@
               "type": "minecraft:item",
               "conditions": [
                 {
-                  "block": "foods_and_roots:corn_crop",
+                  "block": "foods_and_roots:blue_berry_bush",
                   "condition": "minecraft:block_state_property",
                   "properties": {
-                    "age": "6"
+                    "age": "3"
                   }
                 }
               ],
-              "name": "foods_and_roots:corn_seeds"
+              "name": "foods_and_roots:blue_berries"
             },
             {
               "type": "minecraft:item",
-              "name": "foods_and_roots:corn"
+              "name": "foods_and_roots:blue_berries"
             }
           ]
         }
@@ -38,10 +38,10 @@
       "bonus_rolls": 0.0,
       "conditions": [
         {
-          "block": "foods_and_roots:corn_crop",
+          "block": "foods_and_roots:blue_berry_bush",
           "condition": "minecraft:block_state_property",
           "properties": {
-            "age": "6"
+            "age": "3"
           }
         }
       ],
@@ -59,11 +59,11 @@
               }
             }
           ],
-          "name": "foods_and_roots:corn"
+          "name": "foods_and_roots:blue_berries"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "foods_and_roots:blocks/corn_crop"
+  "random_sequence": "foods_and_roots:blocks/blue_berry_bush"
 }

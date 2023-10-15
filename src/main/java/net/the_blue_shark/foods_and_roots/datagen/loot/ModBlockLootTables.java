@@ -6,6 +6,7 @@ import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
@@ -15,6 +16,7 @@ import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.registries.RegistryObject;
 import net.the_blue_shark.foods_and_roots.block.ModBlocks;
+import net.the_blue_shark.foods_and_roots.block.custom.BlueBerryBush;
 import net.the_blue_shark.foods_and_roots.block.custom.CornCropBlock;
 import net.the_blue_shark.foods_and_roots.block.custom.PepperCropBlock;
 import net.the_blue_shark.foods_and_roots.item.ModItems;
@@ -30,6 +32,18 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     protected void generate() {
         this.dropSelf(ModBlocks.CORN_CRATE.get());
         this.dropSelf(ModBlocks.BANANA_CRATE.get());
+        this.dropSelf(ModBlocks.BUDDLEJA.get());
+
+        //potted
+        this.add(ModBlocks.POTTED_BUDDLEJA.get(), createPotFlowerItemTable(ModBlocks.BUDDLEJA.get()));
+
+
+        LootItemCondition.Builder lootitemcondition$builder3 = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(ModBlocks.BLUE_BERRY_BUSH.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(PepperCropBlock.AGE, 3));
+
+        this.add(ModBlocks.BLUE_BERRY_BUSH.get(), createCropDrops(ModBlocks.BLUE_BERRY_BUSH.get(),
+                ModItems.BLUE_BERRIES.get(), ModItems.BLUE_BERRIES.get(), lootitemcondition$builder3));
 
         LootItemCondition.Builder lootitemcondition$builder = LootItemBlockStatePropertyCondition
                 .hasBlockStateProperties(ModBlocks.PEPPER_CROP.get())
@@ -42,16 +56,11 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 .hasBlockStateProperties(ModBlocks.CORN_CROP.get())
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(CornCropBlock.AGE, 6));
 
-        // LootItemCondition.Builder lootitemcondition$builder2 = LootItemBlockStatePropertyCondition
-        //         .hasBlockStateProperties(ModBlocks.CORN_CROP.get())
-        //         .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(CornCropBlock.AGE, 8));
-
         this.add(ModBlocks.CORN_CROP.get(), createCropDrops(ModBlocks.CORN_CROP.get(),
-                ModItems.CORN_SEEDS.get(), ModItems.CORN.get(), lootitemcondition$builder));
+                ModItems.CORN_SEEDS.get(), ModItems.CORN.get(), lootitemcondition$builder2));
 
-        this.dropSelf(ModBlocks.BUDDLEJA.get());
-        this.add(ModBlocks.POTTED_BUDDLEJA.get(), createPotFlowerItemTable(ModBlocks.BUDDLEJA.get()));
     }
+
 
     protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item) {
         return createSilkTouchDispatchTable(pBlock,
