@@ -15,26 +15,37 @@ public class ModCreativeModTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, FoodsAndRoots.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> foods_and_roots_TAB = CREATIVE_MODE_TABS.register("foods_and_roots_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.CORN.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.POP_CORN.get()))
                     .title(Component.translatable("creativetab.foods_and_roots_tab"))
                     .displayItems((pParameters, pOutput) -> {
 
+                        //CORN
                         pOutput.accept(ModItems.CORN.get());
+                        pOutput.accept(ModItems.CORN_SEEDS.get());
                         pOutput.accept(ModItems.CORN_BOWL.get());
                         pOutput.accept(ModItems.POP_CORN.get());
-                        pOutput.accept(ModItems.BANANA.get());
-                        pOutput.accept(ModItems.PEAR.get());
-                        pOutput.accept(ModItems.BEER.get());
-                        pOutput.accept(ModItems.HORSE_MEAT.get());
-                        pOutput.accept(ModItems.PEPPER.get());
-                        pOutput.accept(ModItems.BLUE_BERRIES.get());
-
-                        pOutput.accept(ModItems.PEPPER_SEEDS.get());
-                        pOutput.accept(ModItems.CORN_SEEDS.get());
-
                         pOutput.accept(ModBlocks.CORN_CRATE.get());
 
+                        //PEPPER
+                        pOutput.accept(ModItems.PEPPER.get());
+                        pOutput.accept(ModItems.PEPPER_SEEDS.get());
+
+                        //SUSHI
+                        pOutput.accept(ModItems.NORI.get());
+                        pOutput.accept(ModItems.SUSHI.get());
+
+                        //FRUITS
+                        pOutput.accept(ModItems.BANANA.get());
+                        pOutput.accept(ModItems.PEAR.get());
+                        pOutput.accept(ModItems.BLUE_BERRIES.get());
+
+                        //OTHER_FOOD
+                        pOutput.accept(ModItems.BEER.get());
+                        pOutput.accept(ModItems.HORSE_MEAT.get());
+
+                        //FLOWERS
                         pOutput.accept(ModBlocks.BUDDLEJA.get());
+                        pOutput.accept(ModBlocks.ORANGE_LILY.get());
 
 
                     })

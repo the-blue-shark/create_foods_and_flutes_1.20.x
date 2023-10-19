@@ -51,7 +51,12 @@ public class FoodsAndRoots
         ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.BUDDLEJA.getId(), ModBlocks.POTTED_BUDDLEJA);
         });
 
+        event.enqueueWork(() -> {
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.ORANGE_LILY.getId(), ModBlocks.POTTED_ORANGE_LILY);
+        });
+
     }
+
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {

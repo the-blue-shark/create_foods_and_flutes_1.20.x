@@ -1,7 +1,12 @@
-// 1.20.1	2023-10-10T19:08:06.7399771	Loot Tables
-a3f7b424354599384d15b8a9b27fb3b7184c7747 data/foods_and_roots/loot_tables/blocks/banana_crate.json.json
+// 1.20.1	2023-10-19T23:34:39.4640352	Loot Tables
+17d78b5b8e532c6f3e9f084ead636db664a1a7ac data/foods_and_roots/loot_tables/blocks/apple_leaves.json
+1a1c3779b9ff4b28e238586f63f7e7bd34c01638 data/foods_and_roots/loot_tables/blocks/apple_tree_sapling.json
+170e2f13134819ae9e67f5902050db72e5a0568e data/foods_and_roots/loot_tables/blocks/banana_crate.json
+6570a38917107a38134c99a21f794d24e0b644c9 data/foods_and_roots/loot_tables/blocks/blue_berry_bush.json
 91d8c9da115c7b7ed8a3eba6e2cb062868f7625d data/foods_and_roots/loot_tables/blocks/buddleja.json
 493d349f16efde4dd7ac7f13c5bd7cf2fe1746a7 data/foods_and_roots/loot_tables/blocks/corn_crate.json
-a07405d705773ef5e993ae160c61d21e35ce00c0 data/foods_and_roots/loot_tables/blocks/corn_crop.json
+72db002b7581d3c091377b7e0bde5333de43be67 data/foods_and_roots/loot_tables/blocks/corn_crop.json
+d09420555a7e8fb156ed4d27a852d82676745aa7 data/foods_and_roots/loot_tables/blocks/orange_lily.json
 3f2b213ee87cfeb14be2e98b92fce39e37ff9fa0 data/foods_and_roots/loot_tables/blocks/pepper_crop.json
 0d7e593833905e8f0ce6af79a8cd6b1b13a9c00a data/foods_and_roots/loot_tables/blocks/potted_buddleja.json
+dab642ea663556192e8ec59639c4a64b711a387d data/foods_and_roots/loot_tables/blocks/potted_orange_lily.json

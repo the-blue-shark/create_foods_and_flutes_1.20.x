@@ -4,6 +4,7 @@ import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.storage.loot.LootPool;
@@ -33,9 +34,18 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.CORN_CRATE.get());
         this.dropSelf(ModBlocks.BANANA_CRATE.get());
         this.dropSelf(ModBlocks.BUDDLEJA.get());
+        this.dropSelf(ModBlocks.ORANGE_LILY.get());
+        this.dropSelf(ModBlocks.APPLE_TREE_SAPLING.get());
 
         //potted
         this.add(ModBlocks.POTTED_BUDDLEJA.get(), createPotFlowerItemTable(ModBlocks.BUDDLEJA.get()));
+        this.add(ModBlocks.POTTED_ORANGE_LILY.get(), createPotFlowerItemTable(ModBlocks.ORANGE_LILY.get()));
+
+        LootItemCondition.Builder lootitemcondition$builder4 = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(ModBlocks.APPLE_LEAVES.get());
+
+        this.add(ModBlocks.APPLE_LEAVES.get(), createCropDrops(ModBlocks.APPLE_LEAVES.get(),
+                Items.APPLE, Items.APPLE, lootitemcondition$builder4));
 
 
         LootItemCondition.Builder lootitemcondition$builder3 = LootItemBlockStatePropertyCondition

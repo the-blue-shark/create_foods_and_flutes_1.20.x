@@ -15,6 +15,9 @@ import net.the_blue_shark.foods_and_roots.block.ModBlocks;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, FoodsAndRoots.MOD_ID);
+
+    //--------------------------------------------------------------------------------------------------
+
     //Food
     public static final RegistryObject<Item> BLUE_BERRIES = ITEMS.register("blue_berries",
             () -> new ItemNameBlockItem(ModBlocks.BLUE_BERRY_BUSH.get(),new  Item.Properties().food(Foods.SWEET_BERRIES)));
@@ -36,6 +39,30 @@ public class ModItems {
 
     public static final RegistryObject<Item> HORSE_MEAT = ITEMS.register("horse_meat",
             () -> new Item(new Item.Properties().food(Foods.PORKCHOP)));
+
+
+ //--------------------------------------------------------------------------------------------------
+
+
+//SUSHI
+    public static final RegistryObject<Item> NORI = ITEMS.register("nori",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> CUT_COD = ITEMS.register("cut_cod",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> CUCUMBER = ITEMS.register("cucumber",
+            () -> new Item(new Item.Properties().food(Foods.CARROT)));
+
+    public static final RegistryObject<Item> SUSHI = ITEMS.register("sushi",
+            () -> new Item(new Item.Properties().food(ModFoods.SUSHI)));
+
+    public static final RegistryObject<Item> UNSAFE_SUSHI = ITEMS.register("unsafe_sushi",
+            () -> new Item(new Item.Properties().food(ModFoods.POISON_SUSHI)));
+
+
+    //--------------------------------------------------------------------------------------------------
+
 
     //Seeds
     public static final RegistryObject<Item> PEPPER_SEEDS = ITEMS.register("pepper_seeds",

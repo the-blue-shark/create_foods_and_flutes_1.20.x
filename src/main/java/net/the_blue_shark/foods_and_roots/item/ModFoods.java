@@ -9,6 +9,12 @@ public class ModFoods {
     public static final FoodProperties CORN = new FoodProperties.Builder().nutrition(1)
             .saturationMod(0.3f).build();
 
+    public static final FoodProperties SUSHI = new FoodProperties.Builder().nutrition(6)
+            .saturationMod(0.7f).fast().build();
+
+    public static final FoodProperties POISON_SUSHI = new FoodProperties.Builder().nutrition(6)
+            .saturationMod(0.7f).fast().build();
+
     public static final FoodProperties CORN_BOWL = new FoodProperties.Builder().nutrition(2)
             .saturationMod(0.4f).build();
     public static final FoodProperties POP_CORN = new FoodProperties.Builder().nutrition(5)

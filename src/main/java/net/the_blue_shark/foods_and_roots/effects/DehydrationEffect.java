@@ -14,10 +14,8 @@ public class DehydrationEffect extends MobEffect {
     public void applyEffectTick(LivingEntity entity, int amplifier) {
         Level level = entity.level();
 
-        // Check if the entity is in the Nether
         if (level.dimension() == Level.NETHER) {
-            // Apply fire to the entity
-            entity.setSecondsOnFire(1);// You can adjust the duration as needed
+            entity.setSecondsOnFire(1);
         }
     }
 

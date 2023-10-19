@@ -30,10 +30,20 @@ public class ModBlockStateProvider extends BlockStateProvider {
         makePepperCrop((CropBlock) ModBlocks.PEPPER_CROP.get(), "pepper_crop_stage", "pepper_crop_stage");
         makeCornCrop(((CropBlock) ModBlocks.CORN_CROP.get()), "corn_crop_stage", "corn_crop_stage");
 
+        simpleBlockWithItem(ModBlocks.APPLE_TREE_SAPLING.get(), models().cross(blockTexture(ModBlocks.APPLE_TREE_SAPLING.get()).getPath(),
+                blockTexture(ModBlocks.APPLE_TREE_SAPLING.get())).renderType("cutout"));
+
         simpleBlockWithItem(ModBlocks.BUDDLEJA.get(), models().cross(blockTexture(ModBlocks.BUDDLEJA.get()).getPath(),
                 blockTexture(ModBlocks.BUDDLEJA.get())).renderType("cutout"));
         simpleBlockWithItem(ModBlocks.POTTED_BUDDLEJA.get(), models().singleTexture("potted_buddleja", new ResourceLocation("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.BUDDLEJA.get())).renderType("cutout"));
+
+        blockWithItem(ModBlocks.APPLE_LEAVES);
+
+        simpleBlockWithItem(ModBlocks.ORANGE_LILY.get(), models().cross(blockTexture(ModBlocks.ORANGE_LILY.get()).getPath(),
+                blockTexture(ModBlocks.ORANGE_LILY.get())).renderType("cutout"));
+        simpleBlockWithItem(ModBlocks.POTTED_ORANGE_LILY.get(), models().singleTexture("potted_orange_lily", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.ORANGE_LILY.get())).renderType("cutout"));
     }
     public void makeBlueBerryBush(BushBlock block, String modelName, String textureName) {
         Function<BlockState, ConfiguredModel[]> function = state -> blueBerryBushStates(state, block, modelName, textureName);

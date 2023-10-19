@@ -31,11 +31,16 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.CORN_BOWL);
         simpleItem(ModItems.HORSE_MEAT);
         simpleItem(ModItems.BLUE_BERRIES);
+        simpleItem(ModItems.NORI);
+        simpleItem(ModItems.SUSHI);
 
         simpleItem(ModItems.PEPPER_SEEDS);
         simpleItem(ModItems.CORN_SEEDS);
 
         simpleBlockItemBlockTexture(ModBlocks.BUDDLEJA);
+        simpleBlockItemBlockTexture(ModBlocks.ORANGE_LILY);
+
+        simpleBlockItemBlockTexture(ModBlocks.APPLE_TREE_SAPLING);
 
 
     }
