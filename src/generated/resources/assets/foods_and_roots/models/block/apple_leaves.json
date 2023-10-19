@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "foods_and_roots:block/apple_leaves"
+  }
+}
